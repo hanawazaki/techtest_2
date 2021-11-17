@@ -1,30 +1,14 @@
 <template>
   <div class="hero">
-    <img src="../assets/img/img-hero1.jpg" class="absolute z-10" alt="" />
-    <img
-      src="../assets/img/img-hero2.jpg"
-      class="right-0 absolute z-20"
-      alt=""
-    />
-    <div class="z-30 absolute left-1/4 top-2/4">
-      <h1 class="text-xl text-gray-500 mb-8">
-        <span class="font-bold text-black">Booked Tool</span> enables you to
+    <img src="../assets/img/img-hero1.jpg" class="img1" alt="" />
+    <img src="../assets/img/img-hero2.jpg" class="img2" alt="" />
+    <div class="hero-text">
+      <h1>
+        <span>Booked Tool</span> enables you to
         <br />
         create Interactive advertisement
       </h1>
-      <a
-        href="#"
-        class="
-          px-6
-          py-6
-          bg-blueButton
-          rounded-xl
-          text-white
-          font-semibold
-          text-md
-        "
-        >What is it?</a
-      >
+      <a href="#" class="hero-button">What is it?</a>
     </div>
   </div>
 </template>
@@ -33,8 +17,50 @@
 export default {};
 </script>
 
-<style>
-img {
-  width: 650px;
+<style lang="scss">
+.hero {
+  img {
+    width: 700px;
+  }
+
+  .img1 {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .img2 {
+    right: 0;
+    z-index: 20;
+    position: absolute;
+  }
+
+  .hero-text {
+    position: absolute;
+    z-index: 30;
+    left: 25%;
+    top: 50%;
+
+    h1 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: #757d85;
+      margin-bottom: 2rem;
+      font-weight: 400;
+
+      span {
+        font-weight: 700;
+        color: rgb(46, 43, 43);
+      }
+    }
+
+    .hero-button {
+      padding: 1.25rem;
+      color: white;
+      background-color: #468fcc;
+      border-radius: 0.75rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
 }
 </style>

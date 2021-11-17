@@ -7,17 +7,7 @@
       <li class="menu active">
         <a href="#">Home</a>
       </li>
-      <li
-        class="
-          menu
-          hover:bg-greyblueHover
-          px-6
-          py-2
-          rounded-full
-          transition
-          duration-300
-        "
-      >
+      <li class="menu">
         <a href="#" class="">Discover</a>
       </li>
       <li class="register">
