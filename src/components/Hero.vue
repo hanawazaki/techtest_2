@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <section class="hero">
     <img src="../assets/img/img-hero1.jpg" class="img1" alt="" />
     <img src="../assets/img/img-hero2.jpg" class="img2" alt="" />
     <div class="hero-text">
@@ -10,7 +10,7 @@
       </h1>
       <a href="#" class="hero-button">What is it?</a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -19,19 +19,20 @@ export default {};
 
 <style lang="scss">
 .hero {
+  display: flex;
   img {
     width: 700px;
   }
 
   .img1 {
-    position: absolute;
+    position: relative;
     z-index: 10;
   }
 
   .img2 {
-    right: 0;
-    z-index: 20;
+    right: 0px;
     position: absolute;
+    z-index: 10;
   }
 
   .hero-text {
