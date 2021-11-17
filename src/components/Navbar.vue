@@ -20,12 +20,12 @@
       >
         <a href="#" class="">Discover</a>
       </li>
-      <li class="ml-8 mr-5">
+      <li class="register">
         <a href="#">Register</a>
       </li>
-      <li class="mx-5">
+      <li class="search">
         <a href="#">
-          <img src="../assets/img/search.png" class="search" alt="" />
+          <img src="../assets/img/search.png" alt="" />
         </a>
       </li>
     </ul>
@@ -54,22 +54,35 @@ header {
     justify-content: flex-end;
     li {
       list-style: none;
-      a {
-        text-decoration: none;
+      &.menu {
+        margin: 0 10px;
+        padding: 0.5rem 1.5rem;
+        &:hover {
+          background-color: #e0e2e2;
+          border-radius: 30px;
+          padding: 0.5rem 1.5rem;
+        }
       }
-      .active {
+      &.active {
         background-color: #e0e2e2;
         border-radius: 30px;
-        padding: 1.5rem 0.5rem;
+        padding: 0.5rem 1.5rem;
       }
 
-      .menu {
-        margin: 0 10px;
+      a {
+        text-decoration: none;
+        color: #000;
       }
-    }
-
-    .search {
-      width: 1.25rem;
+      &.register {
+        margin-left: 2rem;
+        margin-right: 1.25rem;
+      }
+      &.search {
+        margin: 0 1.25rem;
+        img {
+          width: 1.25rem;
+        }
+      }
     }
   }
 }
